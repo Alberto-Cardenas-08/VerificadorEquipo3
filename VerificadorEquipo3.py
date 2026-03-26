@@ -7,6 +7,13 @@ for integrante in integrantes:
 
 contraseñas = ["Uva2", "Komala1970", "Fulljosh", "Palpit0ad", "Gwenely17", "Desklewis", "parissesw", "Lolo", "Tulio31", "Leche"] 
 for contraseña in contraseñas:
-    print("Contraseña:", contraseña)
+    resultado = verificar(contraseñsa)
+    print("Contraseña:", contraseña, "-", resultado)
 
-contrasena
+def verificar(contrasena):
+    if len(contrasena) < 6:
+        return "Débil"
+    elif len(contrasena) >= 6 and not any(c.isdigit() for c in contrasena):
+        return "Media"
+    else:
+        return "Fuerte"
