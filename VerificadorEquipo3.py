@@ -19,17 +19,7 @@ def verificar(contrasena):
     else:
         return "Fuerte"
 
-def verificar(contraseñas):
-    for contrasena in contraseñas:
-        if len(contrasena) < 6:
-            return "Débil"
-        elif len(contrasena) >= 6 and not any(c.isdigit() for c in contrasena):
-            return "Media"
-        else:
-            return "Fuerte"
-
 print("\nResultados de la verificación de contraseñas:")        
 for contrasena in contraseñas:
     resultado = verificar([contrasena])
     print(f"La contraseña '{contrasena}' es: {resultado}")
-
