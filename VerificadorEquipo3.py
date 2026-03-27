@@ -5,8 +5,6 @@ print("El equipo es:", Equipo)
 print("Los integrantes del equipo son:")
 for integrante in integrantes:
     print("-", integrante)
-
-
 def verificar(contrasena):
     if len(contrasena) < 6:
         return "Débil"
@@ -21,3 +19,7 @@ contraseñas = ["Uva2", "Komala1970", "Fulljosh", "Palpit0ad", "Gwenely17", "Des
 for contraseña in contraseñas:
     resultado = verificar(contraseña)
     print("Contraseña:", contraseña, "-", resultado)
+print("\nResultados de la verificación de contraseñas:")        
+for contrasena in contraseñas:
+    resultado = verificar([contrasena])
+    print(f"La contraseña '{contrasena}' es: {resultado}")
