@@ -23,3 +23,11 @@ for i, c in enumerate(contraseñas, 1):
 for contraseña in contraseñas:
     resultado = verificar(contraseña)
     print("Contraseña:", contraseña, "-", resultado)
+
+contador_contraseñas = {"Débil": 0, "Media": 0, "Fuerte": 0}
+for contrasena in contraseñas:
+    resultado = verificar(contrasena)
+    contador_contraseñas[resultado] += 1
+print("\nConteo de contraseñas por nivel de seguridad:")
+for nivel, conteo in contador_contraseñas.items():
+    print(f"{nivel}: {conteo}")
