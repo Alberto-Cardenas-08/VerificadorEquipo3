@@ -16,9 +16,6 @@ def verificar(contrasena):
 
 contraseñas = ["Uva2", "Komala1970", "Fulljosh", "Palpit0ad", "Gwenely17", "Desklewis", "parissesw", "Lolo", "Tulio31", "Leche"]
 
-for contraseña in contraseñas:
-    resultado = verificar(contraseña)
-    print("Contraseña:", contraseña, "-", resultado)
 print("\nResultados de la verificación de contraseñas:")        
 for contrasena in contraseñas:
     resultado = verificar([contrasena])
